@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import './widgets/new_transaction.dart';
-import './widgets/transaction_list.dart';
+import './widgets/user_transaction.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,6 +38,7 @@ class MyHomePage extends StatelessWidget {
               elevation: 5,
             ),
           ),
+      UserTransactions()
       //Textfield is an input field, inorder to create an input field, you would have to do it under the container of the AppBar.
 
 
