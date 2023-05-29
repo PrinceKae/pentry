@@ -27,22 +27,24 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Flutter App'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            width: double.infinity,
-            child: Card(
-              color: Colors.tealAccent,
-              child: Text('CHART'),
-              elevation: 5,
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              child: Card(
+                color: Colors.tealAccent,
+                child: Text('CHART'),
+                elevation: 5,
+              ),
             ),
-          ),
-      UserTransactions()
-      //Textfield is an input field, inorder to create an input field, you would have to do it under the container of the AppBar.
+        UserTransactions()
+        //Textfield is an input field, inorder to create an input field, you would have to do it under the container of the AppBar.
 
 
-        ],
+          ],
+        ),
       ),
     );
   }
